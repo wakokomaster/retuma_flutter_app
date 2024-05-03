@@ -10,22 +10,22 @@ class HomePage extends StatelessWidget {
       home: Scaffold(
         backgroundColor: AppColor.background,
         appBar: AppBar(
-          title: Text('Home Page'),
+          title: const Text('Home Page'),
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pop(
                   context); // Navigate back when the button is pressed
             },
           ),
         ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+        body: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                const Text(
+                Text(
                   "Welcome to the Home Page",
                   style: TextStyle(
                     fontSize: 20,

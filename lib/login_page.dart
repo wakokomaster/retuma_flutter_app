@@ -15,16 +15,12 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                child: const Text(
-                  "Welcome Back",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontFamily: 'Urbanist',
-                      color: AppColor.font),
-                ),
+              const Text(
+                "Welcome Back",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: 'Urbanist', color: AppColor.font),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10, // Adjust the height as needed
               ),
               const Text(
@@ -35,7 +31,7 @@ class LoginPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: AppColor.font),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10, // Adjust the height as needed
               ),
               Container(
@@ -48,18 +44,18 @@ class LoginPage extends StatelessWidget {
                     focusColor: Colors.white,
                     hintText: 'Username',
                     hintStyle: TextStyle(color: AppColor.font.withOpacity(0.6)),
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                           Radius.circular(10.0)), // Adjust the radius here
                     ),
                   ),
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontFamily: 'Urbanist', // Set the color to white
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5, // Adjust the height as needed
               ),
               const SizedBox(height: 10),
@@ -73,12 +69,12 @@ class LoginPage extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: 'Password',
                     hintStyle: TextStyle(color: AppColor.font.withOpacity(0.6)),
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                           Radius.circular(10.0)), // Adjust the radius here
                     ),
                   ),
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontFamily: 'Urbanist', // Set the color to white
                   ),
@@ -96,14 +92,14 @@ class LoginPage extends StatelessWidget {
                       fontFamily: 'Urbanist'),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10, // Adjust the height as needed
               ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => const HomePage()),
                   );
                 },
                 style: ButtonStyle(
@@ -118,7 +114,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10, // Adjust the height as needed
               ),
               const Divider(),
